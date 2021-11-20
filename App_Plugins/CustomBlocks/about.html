@@ -1,0 +1,8 @@
+<button  type="button" ng-click="block.edit()" class="btn-reset umb-outline blockelement-labelblock-editor blockelement__draggable-element"> 
+    <div>
+        <h2>{{block.data.title}}</h2>
+        <div style="display: flex;margin-left:-8px;margin-right:-8px">
+            <p ng-repeat="item in block.data.items.contentData" style="padding:8px">{{item.content}}</p>
+        </div>
+    </div>
+</button>

@@ -1,0 +1,11 @@
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var aboutItem =  (ContentModels.AboutItem) Model.Content;
+}
+
+<div class="col-lg-4">
+    <p class="lead">
+        @aboutItem.Content
+    </p>
+</div>
